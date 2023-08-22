@@ -15,4 +15,5 @@ Files containing Monty byte codes usually have the .m extension. Most of the ind
 * To know the proper way to use global variables
 
 ## Authors/Collaborators
-[Monsurat Ajadi](https://github.com/Olory4real/monty/) || [Oselu Fortunatus](https://github.com/Osfoce/monty/)
+[Monsurat Ajadi](https://github.com/Olory4real/monty/) 
+[Oselu Fortunatus](https://github.com/Osfoce/monty/)
