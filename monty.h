@@ -20,7 +20,7 @@
  */
 typedef struct stack_s
 {
-        int n;
+        int i;
         struct stack_s *prev;
         struct stack_s *next;
 } stack_t;
@@ -50,7 +50,7 @@ int len_chars(FILE *);
 void find_func(char *, char *, int, int);
 
 /*Stack operations*/
-stack_t *create_node(int n);
+stack_t *create_node(int i);
 void free_nodes(void);
 void print_stack(stack_t **, unsigned int);
 void add_to_stack(stack_t **, unsigned int);

@@ -12,7 +12,7 @@ void print_char(stack_t **stack, unsigned int line_number)
 	if (stack == NULL || *stack == NULL)
 		string_err(11, line_number);
 
-	ascii = (*stack)->n;
+	ascii = (*stack)->next;
 	if (ascii < 0 || ascii > 127)
 		string_err(10, line_number);
 	printf("%c\n", ascii);
@@ -65,6 +65,7 @@ void rotl(stack_t **stack, __attribute__((unused))unsigned int ln)
 	tmp->next = *stack;
 	(*stack)->prev = tmp;
 	*stack = (*stack)->next;
+	
 	(*stack)->prev->next = NULL;
 	(*stack)->prev = NULL;
 }
@@ -91,4 +92,5 @@ void rotr(stack_t **stack, __attribute__((unused))unsigned int ln)
 	tmp->prev->next = NULL;
 	tmp->prev = NULL;
 	(*stack)->prev = tmp;
-}	(*stack) = tmp;
+	(*stack) = tmp;
+}

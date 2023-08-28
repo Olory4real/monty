@@ -156,4 +156,5 @@ void call_fun(op_func func, char *op, char *val, int ln, int format)
 			add_to_queue(&node, ln);
 	}
 	else
-}		func(&head, ln);
+		func(&head, ln);
+}
